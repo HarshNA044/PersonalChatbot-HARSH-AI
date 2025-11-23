@@ -24,7 +24,7 @@ async function sendMessage() {
     }
     try {
         // sending msg from UI to fastapi
-        const response = await fetch('http://127.0.0.1:8000/', 
+        const response = await fetch('https://personal-chatbot-harsh-ai.vercel.app/', 
             {method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify({message}),});
