@@ -3,7 +3,6 @@ from pydantic import BaseModel
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from fastapi.middleware.cors import CORSMiddleware
-from vercel_fastapi import VercelFastAPI
 
 load_dotenv()
 
@@ -11,7 +10,6 @@ class chatRequest(BaseModel):
     message : str
 
 app=FastAPI()
-handler = VercelFastAPI(app) # required for vercel
 
 app.add_middleware(
     CORSMiddleware,
