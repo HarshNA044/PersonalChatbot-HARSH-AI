@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+}
+header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    font-size: 11px;
+    line-height: 2px;
+    padding: 10px 30px;
+}
+header img {
+    width: 35px;
+    height: 35px;
+    top: 4.5px;
+    position: relative;
+}
+.brandName {
+    display: inline-block;
+}
+.boldtxt span {
+    font-weight: bold;
+}
+.bodyMargin {
+    margin: 1.5%;
+}
+.chat-container {
+    height: 415px;
+    width: 100%;
+    margin: 3%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.chat-container p {
+    background: linear-gradient(90deg,#007bff,#add8e6);
+    color: white;
+    border-radius: 20px 0px 20px 20px;
+    width: fit-content;
+    padding: 10px 15px;
+    position: absolute;
+    right: 1.5%;
+}
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1.5px solid grey;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    resize: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+#sendBtn {
+    border: 0;
+    border-radius: 50%;
+    padding-left:13px;
+    padding-right: 13px;
+    background: linear-gradient(90deg,#007bff,#add8e6);
+    color: white;
+    cursor: pointer;
+}
+.txtareaNsendbtn {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    padding-right: 3%;
+    box-sizing: border-box;
+}
+.message {
+    max-width: 70%;
+    padding: 8px 15px;
+    line-height: 1.4;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+.message-user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px 0px 8px 8px;
+    margin-right: 5%;
+}
+.message-llm {
+    align-self: flex-start;
+    background-color: #e5e5ea;
+    color: black;
+    border-radius: 0px 8px 8px 8px;
+}
