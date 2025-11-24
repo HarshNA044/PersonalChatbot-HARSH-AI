@@ -24,10 +24,11 @@ async function sendMessage() {
     }
     try {
         // sending msg from UI to fastapi
-        const response = await fetch('https://personalchatbot-harsh-ai.onrender.com/', 
-            {method:'POST',
-            headers:{'Content-Type':'application/json'},
-            body:JSON.stringify({message}),});
+        const response = await fetch('https://personalchatbot-harsh-ai.onrender.com/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message: usermsg }),
+});
         
         // check if response is ok
         if (!response.ok) throw new Error("Network response was not ok.");
