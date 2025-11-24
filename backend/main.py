@@ -8,6 +8,7 @@ import os
 class chatRequest(BaseModel):
     message : str
 
+load_dotenv()
 app=FastAPI()
 
 app.add_middleware(
