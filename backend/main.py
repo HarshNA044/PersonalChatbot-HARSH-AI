@@ -3,8 +3,8 @@ from pydantic import BaseModel
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from fastapi.middleware.cors import CORSMiddleware
+import os
 
-load_dotenv()
 class chatRequest(BaseModel):
     message : str
 
@@ -21,6 +21,7 @@ app.add_middleware(
 def get_llmResponse(user_msg):
     message=user_msg.lower()
     llm = ChatGroq(
+    api_key=os.getenv("GROQ_API_KEY"),
     model="llama-3.1-8b-instant",
     temperature=1,
     max_tokens=None,
