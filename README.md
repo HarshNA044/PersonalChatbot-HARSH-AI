@@ -1,6 +1,7 @@
 # Personal Chatbot – H.A.R.S.H. AI
 
 H.A.R.S.H. AI is a lightweight personal chatbot that uses FastAPI on the backend and a simple HTML/CSS/JavaScript interface on the frontend. It connects to the Groq Llama 3.1 8b instant model through LangChain to generate fast and accurate responses. The project is still under development, and more features will be added over time.
+
 <img width="1894" height="937" alt="image" src="https://github.com/user-attachments/assets/9adb2a68-6393-4dbc-819e-b07f8ab4f8ca" />
 ---
 
