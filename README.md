@@ -4,12 +4,12 @@ H.A.R.S.H. AI is a lightweight personal chatbot that uses FastAPI on the backend
 
 ---
 
-How to Run the Project Locally
+**How to Run the Project Locally**
 
 1. Clone the repository
 
-git clone your_repo_link
-cd your_repo
+git clone https://github.com/HarshNA044/PersonalChatbot-HARSH-AI.git
+cd PersonalChatbot-HARSH-AI
 
 2. Backend setup
 
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 Create a ".env" file:
 
-GROQ_API_KEY=your_api_key_here
+GROQ_API_KEY=enter_your_api_key_here
 
 Run the FastAPI server:
 
@@ -52,7 +52,7 @@ http://127.0.0.1:8000/
 
 ---
 
-Advantages
+**Advantages**
 
 - Simple and easy to understand
 - Uses FastAPI, which is fast and clean
@@ -60,11 +60,10 @@ Advantages
 - Works with Groq Llama models for fast responses
 - Clear separation of backend and frontend
 - Easy to modify and extend
-- Good for learning full-stack basics with AI integration
 
 ---
 
-Limitations
+**Limitations**
 
 - No message history or memory
 - No user authentication
@@ -76,21 +75,7 @@ Limitations
 
 ---
 
-Project Status
+**Project Status**
 
 This project is actively under development.
-Upcoming improvements may include:
-
-- Better UI
-- Streaming responses
-- Conversation history
-- Multiple chat modes
-- Authentication
-- More powerful models
-
----
-
-Author
-
-Created by Harsh, as a personal AI assistant project.
 More updates coming soon.
