@@ -10,6 +10,7 @@ H.A.R.S.H. AI is a lightweight personal chatbot that uses FastAPI on the backend
 1. Clone the repository
 
 git clone https://github.com/HarshNA044/PersonalChatbot-HARSH-AI.git
+
 cd PersonalChatbot-HARSH-AI
 
 2. Backend setup
