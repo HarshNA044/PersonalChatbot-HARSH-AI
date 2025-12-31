@@ -5,31 +5,31 @@ body {
     font-family: "Poppins", sans-serif;
 }
 header {
-    background-color: white;
+    background: linear-gradient(to bottom,#007bff,#f8f9fa);
+    opacity: 0.9;
     position: fixed;
     width: 100%;
-    font-size: 11px;
-    line-height: 2px;
+    line-height: 0px;
     padding: 10px 30px;
 }
 header img {
     width: 35px;
     height: 35px;
-    top: 4.5px;
+    top: 2.5px;
     position: relative;
 }
 .brandName {
     display: inline-block;
 }
 .boldtxt span {
-    font-weight: bold;
+    font-weight: normal;
 }
 .bodyMargin {
     margin: 1.5%;
 }
 .chat-container {
     height: 415px;
-    width: 100%;
+    width: 98%;
     margin: 3%;
     overflow-y: auto;
     display: flex;
@@ -37,11 +37,30 @@ header img {
     gap: 10px;
 
 }
+#disclaimer {
+    all: unset; /*ignore styling inherit from parent class*/
+    background-color: #d3d2d2;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-size:x-small;
+}
+#disclaimer span {
+    font-size: small;
+    vertical-align: middle;
+}
+@media (max-width: 600px) {
+    #disclaimer {
+        margin-top: 25px;
+        margin-right: 3%;
+    }
+}
 .chat-container p {
     background: linear-gradient(90deg,#007bff,#add8e6);
     color: white;
     border-radius: 20px 0px 20px 20px;
-    width: fit-content;
+    width: 100%;
     padding: 10px 15px;
     position: absolute;
     right: 1.5%;
